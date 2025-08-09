@@ -20,8 +20,8 @@ input.oninput = function () {
       `%artist% IS "${artist}" AND %title% IS "${title}"${i < lines.length - 1 ? " OR" : ""}`,
     );
   }
-
-  output.value = texts.join("\n");
+ 
+  output.value = texts.join(" ");
 };
 
 const copyButton = document.getElementById("copy");
